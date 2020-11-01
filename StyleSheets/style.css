@@ -111,6 +111,7 @@ header {
 .card-body {
     background-color:#e4faff;
     background-size: cover;
+    color: #525252;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 
 }

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Marvel&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="./StyleSheets/LayerAnimeSheet.css">
+    <link rel="stylesheet" href="./StyleSheets/style.css"> 
+
+    <title>What is Web?</title>
+  </head>
+  <body>
+      <main>
+          <section>
+            <header>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <h1 class="logo">WEB DEVELOPMENT: PRIMER</h1>
+                        </div>
+                        <div class="col-sm-3">
+                            <h3 class="morph">Lightmode:</h3>
+                            <svg id="dark_mode" width="55" height="55" viewBox="0 0 55 55" xmlns="http://www.w3.org/2000/svg">
+                                <path class="moon" d="M 27.5 0 C 34.791 0 41.79 2.899 46.945 8.055 C 52.101 13.21 55 20.209 55 27.5 C 55 34.791 52.101 41.79 46.945 46.945 C 41.79 52.101 34.791 55 27.5 55 C 20.209 55 13.21 52.101 8.055 46.945 C 2.899 41.79 0 34.791 0 27.5 C 0 20.209 2.899 13.21 8.055 8.055 C 13.21 2.899 20.209 0 27.5 0 Z" fill="#fee140"/>
+                            </svg>
+                        </div>
+                   </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="web">
+                            <h3>What is Web?</h3>
+                            <p>This is an introduction to the basic structure of the Internet and how your web application fits into it.</p>
+                            <p>The web, simply put, is a network spread across the globe that connects a multitude of devices and allows them to communicate with one another. Websites on the Internet are hosted on devices referred to as servers, and when you’re interacting with a webpage on the Internet, what you’re essentially doing is exchanging data with the server that the website is hosted on. The device that you’re accessing the webpage using is referred to as the client in the context of the web. In short, the web enables the exchange of data between clients and servers through several elaborate mechanisms that we will be discussing in this chapter.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <img src="./images/netBasePage/web.png" alt="webImage">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="network">
+                            <h3>Network layers</h3>
+                            <p>Since the web is an immensely and widespread network, machines within the network are typically divided into abstract layers, each of which performs a specific task that aids in the overall communication process. Each layer is built on top of the previous layer and has protocols that implement specific functionalities that are involved in the data exchange process.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="network">
+                            <ul>
+                                <p>The Layers are displayed below in order.</p>
+                                <li>Physical Layer</li>
+                                <li>Data Link Layer</li>
+                                <li>Network Layer</li>
+                                <li>Transport Layer</li>
+                                <li>Application Layer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>How does it work?</h3>
+                            <p>Above, we talked about clients and servers and that the Internet allows them to communicate with one another. Now, we will look into exactly how this communication happens.</p>                            
+                            <h4>1. Switches to connect devices</h4>
+                            <p>In essence, the communication is pretty intuitive. Clients send messages to servers requesting data, and servers respond with the required data, but how is this data transferred? The answer requires defining the structure of the Internet first. The Internet comprises of devices known as switches that facilitate the connection of each device to every other device on the network. The devices themselves are referred to as end-systems, and which is essentially just a fancy term for the computer you’re using to access this webpage right now!</p>
+                            <p>End-systems are connected to switches through links and all of the switches are, in turn, connected to each other, thus ensuring that every end-system on the Internet is implicitly connected to every other end-system.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>2. Routers</h4>
+                            <p>A commonly heard term when it comes to networks is routers. Routers have the same function as switches per se in that they also connect end systems to the rest of the web. However, routers are actually very different from switches since they have the additional capability of allowing lookups for destination addresses and determining the shortest or the least busy path from the source of a packet to its destination. Routers are, therefore, a more powerful version of switches and the Internet comprises of a mix of both routers and switches that facilitate the transfer of data between end-systems.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>3. Data packets</h4>
+                            <p>Now that we have established how the Internet is structured to ensure connectivity let’s talk about how data is actually transported across the network. This is done by dividing the data, which is just a set of bits, that needs to be transferred into several smaller chunks of bits known as packets and then sending each packet to its destination independently. The reason for this is that you cannot always send large amounts of data in a single packet because it is highly likely that data in large packets get corrupted on the path from its source to its destination due to a bit flip during transmissions. It is, therefore, more efficient and reliable to send multiple smaller packets.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>4. TCP</h4>
+                            <p>Since it is important for clients and servers across the network to be able to understand the same language, there are certain protocols that dictate the communication between devices on the Internet. The primarily used protocol for communication between a web application and a browser is referred to as the Transmission Control Protocol (TCP). TCP is a transport layer protocol that takes the responsibility of transmitting data and ensures reliable data transfer between clients and servers across the web. The way TCP does this is by adding additional information to data packets that allow for packet authentication and by allowing the exchange of acknowledgment messages between the client and server to confirm data transmissions.</p>
+                        </div>
+                        <div class="col-sm-6"> 
+                            <h4>5. HTTP & HTTPS</h4>
+                            <p>HyperText Transfer Protocol, commonly referred to as HTTP, is an application layer protocol that dictates how the messages a client and server exchange on the web are structured as well as how they are exchanged. The client program and server program talk to each other by exchanging HTTP messages, and the benefit of HTTP is that it ensures messages are being delivered intact and in time.</p>
+                            <p>So, what does HTTPS stand for? HTTPS is an acronym for HyperText Transfer Protocol Secure, and it is basically just the secure version of HTTP. What this means is that communications between the browser and the hosting server are encrypted so that no third parties on the network can access information that is not intended to be shared.</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <h4>6. Port</h4>
+                            <p>So far, we have discussed both the transport layer protocol as well as the application layer protocol that ensures efficient communication between end-systems on the web. But, where exactly do the messages these protocols allow end-systems to go?</p>
+                            <p>Ports are the endpoints of the communication between clients and servers. That is to say; ports are where messages from the network arrive on an end-system. Ports are designated by numbers, and all ports below 1024 are associated with a specific protocol each by default. The port number for HTTP, for instance, is 80, and what this means is that any messages you send or receive on the web come in to and leave your machine on a socket at port 80. Ports above 1024 are open ports available to programmers to use for any process they want to communicate with a network. They can build sockets on these ports and define the structure and type of messages this socket can cater to through socket programming.</p>
+                        </div>
+                        <div class="col">
+                            <hr>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Now that we’ve given a high-level overview of the communication that occurs on the web starting from the protocols and devices that allow systems on the Internet to communicate all the way to the exact point at which the messages arrive, it is safe to assume that we understand how systems on the web are placed. In the next lesson, we will move on to look into​ how these systems actually find one another to communicate with to bring all the pieces together.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="find">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="./images/netBasePage/building.png" alt="building site">
+                        </div>
+                        <div class="col-sm-8">
+                            <h3>How Data Finds it's way?</h3>
+                            <p>So far, we’ve discussed how the Internet is structured, and how it’s abstractions implement the protocols that ensure that the client and server understand one another. Now, we will look into how clients and servers know where they want to send their data and what protocols exist to ensure each end-system on a network has a unique identity that allows it to be reached by other end-systems.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h3>Internet protocol & IP addresses</h3>
+                            <p>Internet Protocol, more commonly known as IP, is a network layer protocol that is responsible for assigning addresses to devices in order to give them unique identities that make them reachable and discoverable. Each device on the Internet has a unique IP address that other devices use to connect with it.</p>
+                            <p>ifconfig is the command that works on Linux, which is what we’re using on our platform. The command ipconfig does the same thing on Windows so try that if you are running the command on a local Windows system.</p>
+                            <p>What this means is that once you have your website live on a server, users will be able to connect with it through the IP address of the server and receive data. You may be wondering now where the IP address comes in if you reach websites through URLs. Well, that’s where DNS comes in. Routers across the web do not store URLs for every single website hosted on the Internet; they only know IP addresses and forward packets towards their destinations based on them.</p>
+                        </div>
+                        <div class="col">
+                            <h3>DNS lookups</h3>
+                            <p>So far, we know everything about the communication between a client and server on the Internet from how the connection forms to how they find one another to exchange messages through DNS servers. To end the discussion on networks, the last thing to be articulated is exactly how lookups in DNS servers work.</p>
+                            <img src="./images/netBasePage/solved-the-problem.png" alt="problem solving">
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h3 class="bottom-info">That covers everything you need to know about the communication between clients and servers on the Internet and exactly how your application would reach users.</h3>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-deck" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                  <div class="col">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Life of a Packet</h4>
+                                      <p class="card-text">This video gives a nice introduction to how packets travel through the Internet. This video is a bit dated, and some terminology used in it might not exactly be up-to-date, but the underpinnings are essentially the same today. It is a nice overview for beginners.</p>
+                                      <a href="https://youtu.be/9BGWrLiT9qs" target="_blank" class="btn btn-primary">Click here</a>  
+                                   </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="bottom-info">Next, we will start looking at exactly what components go into a web application and introduce technologies that you might want to begin learning. Click the below mentioned button to get going and for a surprise. 🥳 </h3>
+                            <p></p>
+                            <a href="" class="btn btn-primary btn-lg btn-block"><h3 class="bottom-info">Databases in Web Developemt</h3></a>
+                            <div></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <svg class="wave-top" width="100" viewBox="0 100 1200 250">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z" fill="#68e1fd"/>
+          </svg>
+      </main>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="./JavaScript/darkmode.js"></script>
+    <script src="./JavaScript/LayerAnime.js"></script>
+    <script src="./JavaScript/wave.js"></script>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  </body>
+</html>

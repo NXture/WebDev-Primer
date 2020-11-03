@@ -76,13 +76,13 @@ header {
     padding-top: 2rem;
     font-family: 'Poppins', sans-serif;
 }
-.forwho h2, .whyme h2, .brief, .web h3, .network h3, .work h4, .work h3, .find h3 {
+.forwho h2, .whyme h2, .brief, .web h3, .network h3, .work h4, .work h3, .find h3, .info h3 {
     font-family: 'Marvel', sans-serif;
     padding-top: 1%;
     letter-spacing: 1vh;
     font-size:x-large;
 }
-.forwho p, .whyme p, ul, .web p, .network p, .work p, .find p {
+.forwho p, .whyme p, ul, .web p, .network p, .work p, .find p, .info p, ol {
     font-family: 'Poppins', sans-serif;
 }
 .card2 {
@@ -115,6 +115,23 @@ header {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 
 }
-.bottom-info {
-    letter-spacing: 0;
+.web-types {
+    font-weight: bolder;
+}
+
+.database-tools {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.database-tools img {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0.7rem;
+}
+
+.end-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
